@@ -25,17 +25,19 @@ A Python application that uses YOLOv8 pose estimation to detect and classify hum
 ## Project Structure
 
 ```
-Human-activities-recognition-using-pose-estimation--main/
-├── activity_recognizer.py    # Main application script
-├── data/                     # Input video files
-│   └── input.mp4            # Sample input video
-├── models/                   # AI models
-│   └── yolov8n-pose.pt      # YOLOv8 pose estimation model
-├── output/                   # Generated output files
-│   ├── output.mp4           # Processed video with annotations
-│   └── output.gif           # Demo GIF
-├── requirements.txt          # Python dependencies
-└── README.md                # This file
+human-activity-recognition/
+├── activity_recognizer.py      # Main application script
+├── data/                       # Input / sample videos (keep small examples only)
+│   └── input.mp4               # Sample input video
+├── models/                     # Pre-trained / fine-tuned models
+│   └── yolov8n-pose.pt         # YOLOv8 pose estimation model
+├── output/                     # Generated outputs (videos, gifs) - usually gitignored except demo
+│   ├── output.mp4              # Example processed video (may be regenerated)
+│   └── output.gif              # Demo GIF shown in README
+├── requirements.txt            # Python dependencies
+├── .gitignore                  # Git ignore rules
+├── LICENSE                     # MIT license
+└── README.md                   # Project docs
 ```
 
 ## Requirements

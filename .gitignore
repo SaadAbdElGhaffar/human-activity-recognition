@@ -1,0 +1,64 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs & debug
+*.log
+logs/
+
+# IDE / Editors
+.vscode/
+.idea/
+*.code-workspace
+
+# OS / Misc
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+.hypothesis/
+.pytest_cache/
+
+# Ultralytics / YOLO
+runs/
+
+# Media outputs (keep small demo gif)
+output/*.mp4
+# Keep demo gif
+!output/output.gif
+
+# Large model weights except the included baseline
+models/*
+!models/yolov8n-pose.pt
+
+# Local data recordings (keep sample)
+data/*
+!data/input.mp4
+
+# Ignore generated GIF variants except the main demo
+output/*.gif
+!output/output.gif
+
+# VS Code local settings override
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
